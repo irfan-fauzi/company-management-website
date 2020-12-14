@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Be Vietnam', sans-serif;
+  font-size: 16px;
+}
+
+img {
+  display: inline-block;
+}
+
+header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 1rem;
+}
+
+header .navbar .menus, header .navbar .btn {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  header .navbar .btn {
+    display: block;
+  }
+  header .navbar .menus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .navbar .menus__sub-menu {
+    list-style: none;
+    padding: 0 1rem;
+    font-size: 0.9rem;
+  }
+  header .navbar .hamburger {
+    display: none;
+  }
+}
+
+.landing .illusttration-wrap {
+  padding: 1rem;
+  position: relative;
+}
+
+.landing .illusttration-wrap .illustration-img {
+  max-width: 100%;
+}
+
+.landing .illusttration-wrap::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url("https://raw.githubusercontent.com/rangelreyna/projects-and-challenges/568ff2fcc7c6e3a39f64ba1fea8e0e4b49b6ac0e/manage-landing-page-master/images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -10rem;
+  left: 0;
+  position: absolute;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,90 @@
+// COLOR
+// #primary
+$BrightRed: hsl(12, 88%, 59%);
+$DarkBlue: hsl(228, 39%, 23%);
+
+// #neutral
+$DarkGrayishBlue: hsl(227, 12%, 61%);
+$VeryDarkBlue: hsl(233, 12%, 13%);
+$VeryPaleRed: hsl(13, 100%, 96%);
+$VaryLightGray: hsl(0, 0%, 98%);
+
+// END COLOR
+
+// BASE RESET
+*{
+  margin: 0;
+  padding: 0;
+ 
+} 
+html{
+  font-family: 'Be Vietnam', sans-serif;
+  font-size: 16px;
+}
+img{
+  display: inline-block;
+}
+
+// END BASE RESET
+
+// START HEADER
+header{
+ // padding: 1rem;
+ // background-color: salmon;
+  //flex-direction: row;
+  //border: black solid 1px;
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    .menus, .btn{
+      display: none;
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  header{
+    .navbar{
+      
+      .btn{
+        display: block;
+      }
+      .menus{
+        display: flex;
+        &__sub-menu{
+          list-style: none;
+          padding: 0 1rem;
+          font-size: 0.9rem;
+        }
+      }
+      .hamburger{
+        display: none;
+      }
+    }
+  }
+} 
+// END HEADER
+
+// START LANDING PAGE
+.landing{
+  .illusttration-wrap{
+    padding: 1rem;
+    position: relative;
+   // background-color: rgb(220, 207, 207);
+    .illustration-img{
+      max-width: 100%;
+    }
+    &::after{
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: url("https://raw.githubusercontent.com/rangelreyna/projects-and-challenges/568ff2fcc7c6e3a39f64ba1fea8e0e4b49b6ac0e/manage-landing-page-master/images/bg-tablet-pattern.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: -10rem;
+      left: 0;
+      position: absolute;
+    }
+  }
+}
+// END LANDING PAGE
