@@ -40,10 +40,10 @@ html{
   color: $DarkBlue;
 }
 body{
-  overflow-x: hidden;
+   overflow-x: hidden;
 }
 main{
-  
+  max-width: 100%;
  position: relative;
   &::after{
     content: "";
@@ -62,8 +62,8 @@ main{
   main{
    // border: black solid 1px;
    // width: 1400px;
-    margin: auto;
-    padding: 0 3rem;
+    // margin: auto;
+    // padding: 0 3rem;
   }
 }
 
@@ -93,7 +93,7 @@ header{
 }
 @media only screen and (min-width: 768px) {
   header{
-    padding: 0 3.5rem;
+   padding: 0 3.5rem;
     .navbar{
       .btn{
         display: block;
@@ -132,7 +132,7 @@ header{
   // start illustration wrap
   .illusttration-wrap{
     // border: black solid 1px;
-    padding: 2rem 2rem 0 2rem;
+    //padding: 2rem 2rem 0 2rem;
     position: relative;
    // background-color: rgb(220, 207, 207);
     .illustration-img{
@@ -323,11 +323,11 @@ header{
     position: relative;
     margin: auto;
     display: flex;
-    // border: rgb(124, 122, 122) solid 1px;
+    border: rgb(124, 122, 122) solid 1px;
     width: 400px;
     height: 300px;
     // overflow-x: scroll;
-    overflow: hidden;
+    //overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mendatory;
     scroll-behavior: smooth;

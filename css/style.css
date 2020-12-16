@@ -16,6 +16,7 @@ body {
 }
 
 main {
+  max-width: 100%;
   position: relative;
 }
 
@@ -30,13 +31,6 @@ main::after {
   right: -10rem;
   position: absolute;
   z-index: -1;
-}
-
-@media only screen and (min-width: 768px) {
-  main {
-    margin: auto;
-    padding: 0 3rem;
-  }
 }
 
 img {
@@ -104,7 +98,6 @@ header .navbar .menus, header .navbar .btn {
 }
 
 .landing .illusttration-wrap {
-  padding: 2rem 2rem 0 2rem;
   position: relative;
 }
 
@@ -320,9 +313,9 @@ header .navbar .menus, header .navbar .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: #7c7a7a solid 1px;
   width: 400px;
   height: 300px;
-  overflow: hidden;
   -webkit-overflow-scrolling: touch;
   -ms-scroll-snap-type: x mendatory;
       scroll-snap-type: x mendatory;
