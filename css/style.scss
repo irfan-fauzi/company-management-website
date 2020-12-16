@@ -59,12 +59,12 @@ main{
   }
 }
 @media only screen and (min-width: 768px){
-  main{
-   // border: black solid 1px;
-   // width: 1400px;
-    // margin: auto;
-    // padding: 0 3rem;
-  }
+  // main{
+  //  // border: black solid 1px;
+  //  // width: 1400px;
+  //   // margin: auto;
+  //   // padding: 0 3rem;
+  // }
 }
 
 img{
@@ -326,7 +326,7 @@ header{
     border: rgb(124, 122, 122) solid 1px;
     width: 400px;
     height: 300px;
-    // overflow-x: scroll;
+    overflow-x: scroll;
     //overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mendatory;

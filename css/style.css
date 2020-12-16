@@ -316,6 +316,7 @@ header .navbar .menus, header .navbar .btn {
   border: #7c7a7a solid 1px;
   width: 400px;
   height: 300px;
+  overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
   -ms-scroll-snap-type: x mendatory;
       scroll-snap-type: x mendatory;
