@@ -32,6 +32,13 @@ main::after {
   z-index: -1;
 }
 
+@media only screen and (min-width: 768px) {
+  main {
+    margin: auto;
+    padding: 0 3rem;
+  }
+}
+
 img {
   display: inline-block;
 }
@@ -141,7 +148,6 @@ header .navbar .menus, header .navbar .btn {
 
 @media only screen and (min-width: 768px) {
   .landing {
-    width: 1400px;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -149,7 +155,6 @@ header .navbar .menus, header .navbar .btn {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0 4rem;
   }
   .landing .illusttration-wrap {
     -webkit-box-flex: 1;
@@ -230,7 +235,6 @@ header .navbar .menus, header .navbar .btn {
 
 @media only screen and (min-width: 768px) {
   .features {
-    width: 1220px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -239,17 +243,17 @@ header .navbar .menus, header .navbar .btn {
   .features__wrap-caption {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    -webkit-box-flex: 1.1;
-        -ms-flex: 1.1;
-            flex: 1.1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     text-align: left;
   }
   .features__wrap-caption h1 {
-    padding: 0 10rem 0 0;
+    padding: 0 5rem 0 0;
     font-size: 2.5rem;
   }
   .features__wrap-caption p {
-    padding: 0 15rem 0 0;
+    padding: 0 5rem 0 0;
   }
   .features .wrap-feature {
     -webkit-box-flex: 1;
